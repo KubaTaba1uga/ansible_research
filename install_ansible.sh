@@ -3,7 +3,7 @@
 ANSIBLE_VIRTUALENV="$(pwd)/.venv"
 
 SUDO=''
-if ! type "sudo" > /dev/null; then
+if type "sudo" > /dev/null; then
     SUDO='sudo'
 fi
 
